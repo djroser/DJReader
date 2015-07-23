@@ -9,9 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    NSInteger itemTagChange;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (nonatomic, assign) NSInteger itemTagChange;
 
 @end
 

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BookCell.h
 //  DJBookReader
 //
 //  Created by user on 15/7/20.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
-
+@interface BookCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *bookPic;
 
 @end
-
