@@ -55,6 +55,9 @@
 		CEA29CA11B5F211C00BCF8D6 /* PCGlobalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA29CA01B5F211C00BCF8D6 /* PCGlobalModel.m */; };
 		CEA29CA41B5F214900BCF8D6 /* PCPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA29CA31B5F214900BCF8D6 /* PCPageView.m */; };
 		CEA29CA71B5F474600BCF8D6 /* ReadMark.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA29CA61B5F474600BCF8D6 /* ReadMark.m */; };
+		CEC94B621B60C81A009E3C5B /* BookShelfCell.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC94B611B60C81A009E3C5B /* BookShelfCell.png */; };
+		CEC94B641B60D952009E3C5B /* book.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEC94B631B60D952009E3C5B /* book.jpg */; };
+		CEC94B671B60DE40009E3C5B /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC94B661B60DE40009E3C5B /* HeadView.m */; };
 		CECAC1791B5E1BB60012C30F /* NSString+DJPaging.m in Sources */ = {isa = PBXBuildFile; fileRef = CECAC1781B5E1BB60012C30F /* NSString+DJPaging.m */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +133,10 @@
 		CEA29CA31B5F214900BCF8D6 /* PCPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCPageView.m; sourceTree = "<group>"; };
 		CEA29CA51B5F474600BCF8D6 /* ReadMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadMark.h; sourceTree = "<group>"; };
 		CEA29CA61B5F474600BCF8D6 /* ReadMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadMark.m; sourceTree = "<group>"; };
+		CEC94B611B60C81A009E3C5B /* BookShelfCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BookShelfCell.png; sourceTree = "<group>"; };
+		CEC94B631B60D952009E3C5B /* book.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = book.jpg; sourceTree = "<group>"; };
+		CEC94B651B60DE40009E3C5B /* HeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadView.h; sourceTree = "<group>"; };
+		CEC94B661B60DE40009E3C5B /* HeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadView.m; sourceTree = "<group>"; };
 		CECAC1771B5E1BB60012C30F /* NSString+DJPaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DJPaging.h"; sourceTree = "<group>"; };
 		CECAC1781B5E1BB60012C30F /* NSString+DJPaging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DJPaging.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,6 +196,8 @@
 		CE6F3E811B5C85E700D387C3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEC94B611B60C81A009E3C5B /* BookShelfCell.png */,
+				CEC94B631B60D952009E3C5B /* book.jpg */,
 				CE6F3ED01B5CA2C100D387C3 /* rao */,
 				CE6F3EAA1B5C8FCC00D387C3 /* book */,
 				CE6F3E821B5C85E700D387C3 /* Info.plist */,
@@ -284,6 +293,8 @@
 				CEA29CA31B5F214900BCF8D6 /* PCPageView.m */,
 				CE6F3EA71B5C89CF00D387C3 /* BookCell.h */,
 				CE6F3EA81B5C89CF00D387C3 /* BookCell.m */,
+				CEC94B651B60DE40009E3C5B /* HeadView.h */,
+				CEC94B661B60DE40009E3C5B /* HeadView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -422,8 +433,10 @@
 				CE6F3EE81B5CA2C100D387C3 /* shalou.txt in Resources */,
 				CE6F3EE71B5CA2C100D387C3 /* liaiyigeIDdejuli.txt in Resources */,
 				CE6F3EBD1B5C8FCC00D387C3 /* anshizhangda.jpeg in Resources */,
+				CEC94B641B60D952009E3C5B /* book.jpg in Resources */,
 				CE6F3EBE1B5C8FCC00D387C3 /* bubizhidaowoshishui.jpeg in Resources */,
 				CE6F3EBC1B5C8FCC00D387C3 /* aizaixianjingderizi.jpeg in Resources */,
+				CEC94B621B60C81A009E3C5B /* BookShelfCell.png in Resources */,
 				CE6F3EC81B5C8FCC00D387C3 /* xiaofudequnbai.jpeg in Resources */,
 				CE6F3EED1B5CA2C100D387C3 /* woyaowomenzaiyiqi.txt in Resources */,
 				CE6F3EEB1B5CA2C100D387C3 /* tiaopin.txt in Resources */,
@@ -453,6 +466,7 @@
 			files = (
 				CEA29C9C1B5F20F700BCF8D6 /* PCReaderViewController.m in Sources */,
 				CEA29C9E1B5F20F700BCF8D6 /* PCModelViewController.m in Sources */,
+				CEC94B671B60DE40009E3C5B /* HeadView.m in Sources */,
 				CE6F3EA91B5C89CF00D387C3 /* BookCell.m in Sources */,
 				CEA29C9D1B5F20F700BCF8D6 /* PCDataViewController.m in Sources */,
 				CECAC1791B5E1BB60012C30F /* NSString+DJPaging.m in Sources */,

@@ -9,7 +9,8 @@
 #import "ViewController.h"
 #import "BookCell.h"
 #import "PCReaderViewController.h"
-@interface ViewController ()
+#import "HeadView.h"
+@interface ViewController ()<UICollectionViewDelegateFlowLayout>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
@@ -27,16 +28,34 @@
 
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     
-    UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
-    self.collectionView = collectionView;
+    UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:self.collectionView.frame collectionViewLayout:layout];
+    
     
     layout.minimumInteritemSpacing = 20;
     layout.minimumLineSpacing = 20;
     layout.itemSize = CGSizeMake(100, 124);
     layout.sectionInset = UIEdgeInsetsMake(0, 50, 10, 20);
+    layout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, 30);
+    layout.footerReferenceSize = CGSizeMake(self.view.frame.size.width, 30);
+    
+    
+    
+    self.collectionView.backgroundView = [[UIView alloc]initWithFrame:self.collectionView.bounds];
+    
+    UIImageView *backGroundView = [[UIImageView alloc]initWithFrame:self.collectionView.bounds];
+    
+    backGroundView.image = [UIImage imageNamed:@"book.jpg"];
+    
+    backGroundView.contentMode = UIViewContentModeScaleAspectFill;
+
+    
+    [self.collectionView.backgroundView addSubview:backGroundView];
+    
+
+    self.collectionView = collectionView;
     
     [self.collectionView registerClass:[BookCell class] forCellWithReuseIdentifier:@"BookCell"];
-    
+
     
     
 }
@@ -128,8 +147,24 @@
 }
 
 
-
-
+//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+//{
+//    HeadView *headView;
+//    
+//    if ([kind isEqual:UICollectionElementKindSectionHeader]) {
+//        
+//        headView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"head" forIndexPath:indexPath];
+//        headView.backgroundColor = [UIColor redColor];
+//        
+//        
+//    } else if ([kind isEqual:UICollectionElementKindSectionFooter]) {
+//        headView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"head" forIndexPath:indexPath];
+//        headView.backgroundColor = [UIColor blueColor];
+//    }
+//    
+//            return headView;
+//}
+//
 
 
 

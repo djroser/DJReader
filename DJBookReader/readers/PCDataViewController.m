@@ -81,8 +81,6 @@
 {
     UIBarButtonItem *item = [notification object];
     
-    
-    
     if (self.myDelegate.itemTagChange == item.tag) {
         self.pageView.backgroundColor = [UIColor whiteColor];
         self.view.backgroundColor = [UIColor whiteColor];
@@ -92,19 +90,6 @@
         self.view.backgroundColor = [UIColor darkGrayColor];
         self.myDelegate.itemTagChange = item.tag;
     }
-    
-    
-//    if (item.tag == 0) {
-//        self.pageView.backgroundColor = [UIColor darkGrayColor];
-//        self.view.backgroundColor = [UIColor darkGrayColor];
-//        item.tag = 01;
-//    } else {
-//        self.pageView.backgroundColor = [UIColor whiteColor];
-//        self.view.backgroundColor = [UIColor whiteColor];
-//        item.tag = 0;
-//    }
-    
-    
     
 }
 
